@@ -373,7 +373,7 @@ class Module final {
 
     MallocMemoryAllocator runtime_allocator_;
 
-    MemoryAllocator temp_allocator_{MemoryAllocator(0, nullptr)};
+    MallocMemoryAllocator temp_allocator_{};
 
     std::vector<std::vector<uint8_t>> non_const_buffers_;
 
